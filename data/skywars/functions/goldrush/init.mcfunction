@@ -52,7 +52,7 @@ fill 33 142 -7 19 142 7 white_stained_glass
 setblock 27 139 -6 oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function skywars:goldrush/startsign"}}',Text2:'{"text":"Start","color":"green"}'}
 setblock 25 139 -6 oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function skywars:goldrush/ready"}}',Text2:'{"text":"Ready","color":"yellow"}'}
 setblock 27 139 6 oak_wall_sign{Text2:'{"text":"Made by","color":"white"}',Text3:'{"text":"Nixinova","color":"aqua"}'}
-setblock 25 139 6 oak_wall_sign{Text2:'{"text":"SkyWars v2.0","color":"green"}',Text3:'{"text":"Minecraft 1.15","color":"aqua"}'}
+setblock 25 139 6 oak_wall_sign{Text2:'{"text":"SkyWars v2.1","color":"green"}',Text3:'{"text":"Minecraft 1.16","color":"aqua"}'}
 
 # Credit
 setblock 26 139 6 player_wall_head{SkullOwner:{Name:"Nixinova"}}

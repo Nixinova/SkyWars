@@ -7,6 +7,8 @@
 #                                 
 #---------------------------------
 
+scoreboard players set ingame players 1
+
 tellraw @a {"text":"Game starting!","color":"green"}
 title @a title {"text":"Game starting!","color":"green"}
 
@@ -71,7 +73,7 @@ execute as @a[scores={cage=9}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 green_stained
 execute as @a[scores={cage=10}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 gray_stained_glass replace glass
 execute as @a[scores={cage=11}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 black_stained_glass replace glass
 execute as @a[scores={cage=12}] at @s run fill ~ ~3 ~ ~ ~-2 ~ iron_block replace glass
-execute as @a[scores={cage=12}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 iron_bars replace glass
+execute as @a[scores={cage=12}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 iron_trapdoor replace glass
 execute as @a[scores={cage=13}] at @s run fill ~ ~3 ~ ~ ~-2 ~ oak_wood replace glass
 execute as @a[scores={cage=13}] at @s run fill ~2 ~3 ~2 ~-2 ~-2 ~-2 oak_leaves[persistent=true] replace glass
 
