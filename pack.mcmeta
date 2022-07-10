@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 7,
-        "description": "SkyWars data pack v2.2 for Minecraft 1.17"
+        "pack_format": 10,
+        "description": "SkyWars data pack v2.3 for Minecraft 1.19"
     }
 }

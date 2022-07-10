@@ -1,6 +1,6 @@
 # SkyWars
 
-![SkyWars banner](https://www.nixinova.com/assets/images/minecraft/maps/skywars.jpg)
+![SkyWars banner](https://static.planetminecraft.com/files/resource_media/screenshot/1815/overview-1523341066.jpg)
 
 - [Website](https://www.nixinova.com/downloads/minecraft/maps/skywars)
 - [PlanetMinecraft](https://www.planetminecraft.com/project/skywars-4064694/)
@@ -21,4 +21,4 @@ SkyWars is a 12-player PvP game where players spawn on separate islands, gather 
 5. Create the world.
 6. Enable the datapack using `/datapack enable <press tab>`.
 7. Initialize the world using `/function skywars:goldrush/init`.
-8. Invite your friends and play SkyWars, or type `/function skywars:goldrush/start` to investigate the map by yourself.
+8. Invite your friends and play SkyWars!

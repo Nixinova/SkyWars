@@ -1,11 +1,11 @@
-#---------------------------------
-#                                 
-#      SKYWARS : GOLD RUSH        
-#          by Nixinova            
-#                                 
-#       Finishing commands      
-#                                 
-#---------------------------------
+#---------------------------------#
+#                                 #
+#      SKYWARS : GOLD RUSH        #
+#          by Nixinova            #
+#                                 #
+#       Finishing commands        #
+#                                 #
+#---------------------------------#
 
 scoreboard players set ingame players 0
 
@@ -20,3 +20,4 @@ tp @a 25 138 1
 gamemode adventure @a
 team join lobby @a
 clear @a
+execute at @a run playsound entity.ender_dragon.ambient ambient @p

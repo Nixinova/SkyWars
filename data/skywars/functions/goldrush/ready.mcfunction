@@ -40,6 +40,7 @@ scoreboard players add currentTag tags 1
 execute if score currentTag tags matches 13.. run scoreboard players remove currentTag tags 12
 
 # Final commands
+execute if score @s ready matches 1 run tellraw @a [{"selector":"@s","color":"green"},{"text":" is ready!","color":"yellow"}]
 execute unless score @s ready matches 1 run tellraw @a [{"selector":"@s","color":"green"},{"text":" is now ready!","color":"green"}]
 scoreboard players set @s ready 1
 team join ready @s

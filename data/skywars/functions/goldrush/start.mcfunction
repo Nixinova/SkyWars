@@ -1,11 +1,11 @@
-#---------------------------------
-#                                 
-#      SKYWARS : GOLD RUSH        
-#          by Nixinova            
-#                                 
-#      Game starting commands      
-#                                 
-#---------------------------------
+#---------------------------------#
+#                                 #
+#      SKYWARS : GOLD RUSH        #
+#          by Nixinova            #
+#                                 #
+#      Game starting commands     #
+#                                 #
+#---------------------------------#
 
 scoreboard players set ingame players 1
 
@@ -22,8 +22,7 @@ effect give @a[team=playing] minecraft:resistance 15 4
 
 setblock 24 206 7 redstone_block
 
-#tellraw @a[team=playing] {"text":"Resetting map, expect lag...","color":"red","italic":true}
-title @a[team=playing] actionbar {"text":"Resetting map","color":"red"}
+title @a[team=playing] actionbar {"text":"Resetting map...","color":"red"}
 function skywars:goldrush/clearmap
 title @a[team=playing] actionbar {"text":"Map cleared.","color":"green"}
 title @a[team=playing] actionbar {"text":"Loading new map...","color":"yellow"}

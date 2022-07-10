@@ -9,6 +9,7 @@
 
 gamerule commandBlockOutput false
 gamerule doDaylightCycle false
+gamerule spawnRadius 1
 time set day
 setworldspawn 25 139 1
 spawnpoint @a 25 139 1
@@ -37,9 +38,11 @@ scoreboard objectives add kit dummy "KitID"
 scoreboard objectives add health health "HP"
 scoreboard objectives add deaths deathCount "Deaths"
 scoreboard objectives add tags dummy "Tags"
+scoreboard objectives setdisplay sidebar.team.yellow wins
 scoreboard objectives setdisplay sidebar.team.red kills
+scoreboard objectives setdisplay sidebar.team.gray kills
 scoreboard players set limit players_ready 2
-
+scoreboard players set min players 1
 
 ### LOBBY ###
 
@@ -52,7 +55,7 @@ fill 33 142 -7 19 142 7 white_stained_glass
 setblock 27 139 -6 oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function skywars:goldrush/startsign"}}',Text2:'{"text":"Start","color":"green"}'}
 setblock 25 139 -6 oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function skywars:goldrush/ready"}}',Text2:'{"text":"Ready","color":"yellow"}'}
 setblock 27 139 6 oak_wall_sign{Text2:'{"text":"Made by","color":"white"}',Text3:'{"text":"Nixinova","color":"aqua"}'}
-setblock 25 139 6 oak_wall_sign{Text2:'{"text":"SkyWars v2.2","color":"green"}',Text3:'{"text":"Minecraft 1.17","color":"aqua"}'}
+setblock 25 139 6 oak_wall_sign{Text2:'{"text":"SkyWars v2.3","color":"green"}',Text3:'{"text":"(MC 1.17-1.19)","color":"aqua"}'}
 
 # Credit
 setblock 26 139 6 player_wall_head{SkullOwner:{Name:"Nixinova"}}
@@ -60,7 +63,8 @@ setblock 26 139 6 player_wall_head{SkullOwner:{Name:"Nixinova"}}
 ### MAP LOADING ###
 
 # Structure block platform
-fill 22 205 9 28 205 -5 light_blue_terracotta
+fill 22 205 9 28 205 -5 prismarine_slab[type=top]
+fill 22 207 9 28 207 -5 prismarine_slab
 
 # Ticker
 setblock 25 206 6 repeating_command_block{Command:"function skywars:goldrush/running",auto:true}
@@ -107,3 +111,4 @@ setblock 24 206 -4 structure_block{mode:LOAD,name:"skywars:isle_s4",posX:-5,posY
 setblock 25 206 7 command_block{Command:"setblock ~-1 ~ ~ air"}
 setblock 24 206 6 command_block{Command:'tellraw @a[team=playing] ["",{"text":"Starting!","color":"yellow"}]'}
 setblock 24 206 8 command_block{Command:"execute as @a[team=playing] at @s run fill ~ ~ ~ ~ ~-3 ~ air"}
+setblock 23 206 7 command_block{Command:"effect give @a[team=playing] slow_falling 5"}
